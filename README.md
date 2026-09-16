@@ -15,7 +15,7 @@ Security casework covering risk assessment, control mapping, policy, and audit e
 
 Each case includes the scope assessed, the standard applied, the evidence gathered, gap analysis, risk rating, and prioritized recommendations.
 
-> **How to read the table.** **Type** shows how far a case went: assessment and recommendation, or the full arc through remediation and reassessment. **Access** shows the permission level held, which determines what the case could cover. **Framework** names the standard the assessment was measured against. All three are stated in full in each case README.
+> **How to read the table.** **Type** shows how far a case went: assessment and recommendation, or the full arc through remediation and reassessment. **Access** shows the permission level held, which determines what the case could cover. **Framework** names the standard the assessment was measured against.
 
 ---
 
@@ -23,8 +23,7 @@ Each case includes the scope assessed, the standard applied, the evidence gather
 
 | Case | Name | Type | Framework | Environment | Access | Key Finding |
 |---|---|---|---|---|---|---|
-
-*No completed cases yet.*
+| **GRC-AZ-001** | [Cloud Control Assessment](cases/GRC-AZ-001-cloud-control-assessment/) | Assessment | NIST 800-53 | Azure | Read-only | Pending |
 
 ---
 
@@ -53,8 +52,6 @@ Where write access is held, the case continues: remediate, then reassess to conf
 
 ## Frameworks
 
-Standards used across these cases, and what each is for.
-
 | Framework | Purpose | Prescriptive |
 |---|---|---|
 | **NIST 800-53** | Security and privacy control catalog. Used in federal assessments and RMF | Control objectives, not settings |
@@ -64,39 +61,15 @@ Standards used across these cases, and what each is for.
 | **CMMC** | Defense contractor maturity model, built on NIST 800-171 | Practice level |
 | **CIS Controls** | Prioritized safeguards organized into implementation groups | Prescriptive at the safeguard level |
 
-```text
-What am I producing?
-        |
-        +-- A technical configuration baseline for a specific platform
-        |       --> CIS Benchmarks or DISA STIG (see vulnerability-management)
-        |
-        +-- A control assessment for a federal system
-        |       --> NIST 800-53, within the RMF process
-        |
-        +-- A defense contractor readiness assessment
-        |       --> CMMC, mapped to NIST 800-171
-        |
-        +-- A management system certification effort
-        |       --> ISO 27001
-        |
-        +-- Program coverage reporting for leadership
-                --> NIST CSF
-```
-
-Detailed comparison and control mapping method: [Compliance Frameworks](guides/frameworks/compliance-frameworks.md)
-
 ---
 
-## Relationship to the Other Repositories
+## Guides
 
-Technical findings live in the repository matching their discipline. This repository holds the assessment, the control mapping, and the risk decision that follows from them.
-
-| Work | Repository |
+| Guide | Covers |
 |---|---|
-| A CIS Benchmark scan of a Windows estate | [vulnerability-management](https://github.com/JoshG-IT/vulnerability-management) |
-| A privileged access review | [identity-security](https://github.com/JoshG-IT/identity-security) |
-| A detection coverage gap analysis | [security-operations](https://github.com/JoshG-IT/security-operations) |
-| Mapping any of the above to 800-53 controls, rating the residual risk, and writing the remediation plan | here |
+| [NIST 800-53 Reference](guides/frameworks/nist-800-53.md) | Control families, baselines, and the controls that recur in identity and configuration findings |
+| [Control Assessment Procedure](guides/methodology/control-assessment-procedure.md) | Evidence types per control family, implementation status definitions, assessment objectives |
+| [Risk Rating Method](guides/methodology/risk-rating-method.md) | Likelihood and impact scoring, defending a rating, residual risk |
 
 ---
 
