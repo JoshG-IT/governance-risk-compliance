@@ -84,12 +84,10 @@ defended.
 
 Full population is preferable. Where it is not feasible, state the sample.
 
-```markdown
 Population: 312 domain-joined Windows servers
 Sample:     30, selected across all four OUs and both datacenters
 Method:     random within stratum
 Rationale:  full-population configuration export was unavailable during the window
-```
 
 An unstated sample makes a finding unquantifiable. "Several servers lacked the setting" is not a
 finding. "7 of 30 sampled, projecting to approximately 73 of 312" is.
@@ -98,7 +96,6 @@ finding. "7 of 30 sampled, projecting to approximately 73 of 312" is.
 
 ## Per-control record
 
-```markdown
 ### CM-6 Configuration Settings
 
 **Objective.** The organisation establishes and documents configuration settings, implements them,
@@ -119,7 +116,6 @@ non-compliant resources are recorded rather than prevented.
 **Gap.** CM-6(1) requires automated enforcement. Detection without prevention does not satisfy it.
 
 **Recommendation.** Move the assignment to Deny after testing against existing workloads.
-```
 
 Objective, method, evidence, result, status, gap, recommendation. Every control, same shape.
 
@@ -127,7 +123,6 @@ Objective, method, evidence, result, status, gap, recommendation. Every control,
 
 ## Assessment report structure
 
-```text
 1. Scope and boundary        what was assessed, what was excluded, why
 2. Standard and revision     which catalog, which baseline, which version
 3. Method summary            examine, interview, test, and sampling approach
@@ -136,7 +131,6 @@ Objective, method, evidence, result, status, gap, recommendation. Every control,
 6. Risk ratings              likelihood and impact per finding
 7. Recommendations           owner, timeline, priority
 8. Residual risk             what remains, accepted by whom, review date
-```
 
 ---
 
