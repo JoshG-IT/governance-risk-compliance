@@ -75,7 +75,6 @@ unadjusted matrix output is a calculation, not an assessment.
 
 Every rating needs a sentence supporting each axis and a sentence on why the result is what it is.
 
-```markdown
 **Finding.** Service principal holds Owner at subscription scope with a credential
 unrotated for 14 months and no identified owning team.
 
@@ -88,7 +87,6 @@ of every resource in the subscription, including role assignments.
 
 **Risk: High.** Both axes are high and no compensating control reduces either. Rating is
 unadjusted from the matrix.
-```
 
 If either axis cannot be supported in a sentence, the rating is not yet defensible.
 
@@ -119,11 +117,9 @@ are higher risk than any of them alone. Rate the chain as its own finding.
 
 Every assessment closes with what remains and who accepted it.
 
-```markdown
 | Finding | Treatment | Residual | Compensating Control | Accepted By | Review |
 |---|---|---|---|---|---|
 | Legacy OS on SRV-03 | Accepted | Moderate | Isolated VLAN, no internet egress, monitored | [Role] | 2026-06-01 |
-```
 
 Four treatment options: **mitigate**, **transfer**, **avoid**, **accept**. Acceptance requires a named
 accepting authority and a review date. Documented acceptance is a mature outcome. A finding quietly
