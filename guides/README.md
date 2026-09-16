@@ -6,22 +6,20 @@ References used across the cases in this repository.
 
 | Guide | Covers |
 |---|---|
-
-*None yet.*
+| [NIST 800-53 Reference](frameworks/nist-800-53.md) | Control families, baselines, and the controls that recur in identity and configuration findings |
 
 ## Methodology
 
 | Guide | Covers |
 |---|---|
-
-*None yet.*
+| [Control Assessment Procedure](methodology/control-assessment-procedure.md) | Evidence types per control family, implementation status definitions, assessment objectives |
+| [Risk Rating Method](methodology/risk-rating-method.md) | Likelihood and impact scoring, defending a rating, residual risk |
 
 ---
 
-Planned as casework requires them:
+Added as casework requires them:
 
-- **Compliance Frameworks** - CIS, DISA STIG, NIST 800-53, NIST CSF, and how to map a technical finding to a control
-- **Risk Rating Method** - likelihood and impact scoring, how a rating is defended
-- **Control Assessment Procedure** - evidence types per control family, implementation status definitions
-- **Policy Authoring** - structure, scope statements, how a policy maps to the controls it satisfies
+- **Policy Authoring** - structure, scope statements, and how a policy maps to the controls it satisfies
 - **Audit Evidence Collection** - what constitutes evidence, retention, and chain of custody
+- **ISO 27001 Reference** - Annex A control set and management system requirements
+- **CMMC Reference** - practice levels and the NIST 800-171 mapping
